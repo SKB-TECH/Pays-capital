@@ -1,5 +1,5 @@
 body{
-    background-color: antiquewhite;
+    background-color:aquamarine;
     box-sizing: border-box;
 }
 
@@ -15,7 +15,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 400px;
+    width: 500px;
     height: 400px;
     background-color:#ffffff;
     height: fit-content;
@@ -26,13 +26,13 @@ body{
     width: 90%;
 }
 
-#ext{
+#text{
     box-sizing: border-box;
     width: 100%;
-    height: 90px;
+    height: 35px;
     outline: none;
-    margin-bottom: 20px;
-    border-radius: 40px;
+    margin-bottom: 10px;
+    border-radius: 10px;
 }
 
 ul li{
@@ -49,5 +49,38 @@ img{
 #res{
     width: 95%;
     height: fit-content;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-widith:780px){
+    #root{
+        width: 95%;
+    }
+    #res{
+        width: 80%;
+        height: fit-content;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-widith:375px){
+    #root{
+        width: 70vw;
+    }
+    .title{
+        font-size: 12px;
+    }
+    #res{
+        width: 80%;
+        height: fit-content;
+        margin-bottom: 10px;
+    }
+    #text{
+        box-sizing: border-box;
+        width: 50%;
+        height: 20px;
+        outline: none;
+        margin-bottom: 5px;
+        border-radius: 10px;
+    }
 }
